@@ -91,3 +91,38 @@ For open source projects, say how it is licensed.
 
 ## Project status
 If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+# Install
+
+```sh
+npm install
+```
+
+
+# Migrations
+
+```sh
+npm run migrations:run
+```
+
+# Run in dev mode
+
+```sh
+npm run dev
+```
+
+# Run in prod mode
+
+```sh
+npm run start
+```
+
+# Connect to DB from Docker
+
+```sh
+docker-compose exec postgres bash
+psql -h localhost -d my_store -U nico
+\d+
+SELECT * FROM users;
+DELETE FROM users WHERE id=<id>;
+```
+
