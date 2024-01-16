@@ -35,7 +35,7 @@ const createApp = () => {
     res.send('Hola, soy una nueva ruta');
   });
 
-  app.get('/hello', checkApiKey, (req, res) => {
+  app.get('/hello', (req, res) => {
     res.status(200).json({ name: 'lauti' });
   });
 
