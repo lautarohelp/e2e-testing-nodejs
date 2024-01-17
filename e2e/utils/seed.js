@@ -4,9 +4,6 @@ const sequelize = require("../../src/db/sequelize");
 const { models } = sequelize;
 
 
-
-
-
 const upSeed = async () => {
   try {
     await sequelize.sync({ force: true }); // create table
