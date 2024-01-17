@@ -1,7 +1,7 @@
 
 const { Umzug, SequelizeStorage } = require("umzug");
 const sequelize = require("../../src/db/sequelize");
-const { models } = sequelize;
+// const { models } = sequelize;
 
 const umzug = new Umzug({
   migrations: { glob: './src/db/seeders/*js' },
